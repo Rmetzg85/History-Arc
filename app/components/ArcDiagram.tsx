@@ -11,6 +11,8 @@ const TYPE_COLORS: Record<EventType, string> = {
   conquest: '#eab308',
   genocide: '#dc2626',
   colonialism: '#3b82f6',
+  diaspora: '#22d3ee',
+  ongoing: '#f43f5e',
 };
 
 const TYPE_LABELS: Record<EventType, string> = {
@@ -20,19 +22,37 @@ const TYPE_LABELS: Record<EventType, string> = {
   conquest: 'Conquest',
   genocide: 'Genocide',
   colonialism: 'Colonialism',
+  diaspora: 'Diaspora',
+  ongoing: 'Ongoing',
 };
 
 const REGION_LABELS: Record<Region, string> = {
   europe: 'Europe',
+  british_isles: 'British Isles',
   asia: 'Asia',
+  east_asia: 'East Asia',
+  south_asia: 'South Asia',
+  southeast_asia: 'SE Asia',
   africa: 'Africa',
+  west_africa: 'West Africa',
+  east_africa: 'East Africa',
+  north_africa: 'North Africa',
+  central_africa: 'Central Africa',
+  southern_africa: 'S. Africa',
   americas: 'Americas',
+  north_america: 'N. America',
+  south_america: 'S. America',
   middle_east: 'Middle East',
+  oceania: 'Oceania',
   global: 'Global',
 };
 
-const ALL_TYPES: EventType[] = ['war', 'civil_war', 'slavery', 'conquest', 'genocide', 'colonialism'];
-const ALL_REGIONS: Region[] = ['europe', 'asia', 'africa', 'americas', 'middle_east', 'global'];
+const ALL_TYPES: EventType[] = ['war', 'civil_war', 'slavery', 'conquest', 'genocide', 'colonialism', 'diaspora', 'ongoing'];
+const ALL_REGIONS: Region[] = [
+  'europe', 'british_isles', 'asia', 'east_asia', 'south_asia', 'southeast_asia',
+  'africa', 'west_africa', 'east_africa', 'north_africa', 'central_africa', 'southern_africa',
+  'americas', 'north_america', 'south_america', 'middle_east', 'oceania', 'global',
+];
 
 interface Tooltip {
   x: number;

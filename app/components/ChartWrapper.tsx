@@ -2,8 +2,8 @@
 
 import dynamic from 'next/dynamic';
 
-const ArcDiagram = dynamic(() => import('./ArcDiagram'), { ssr: false });
+const WorldMapDiagram = dynamic(() => import('./WorldMapDiagram'), { ssr: false });
 
 export default function ChartWrapper() {
-  return <ArcDiagram />;
+  return <WorldMapDiagram />;
 }
